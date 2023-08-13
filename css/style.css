@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidebar-width: 19vw;
+  --font-base: "Poppins", sans-serif;
+  /* To do */
+  --color-text: var(--color-heading);
+  --color-text-muted: #5ebee7;
+  --color-input: #082937;
+  --color-input-lighter: #0b374a;
+  --color-secondary-lighter: #ffa368;
+  --color-tertiary: #1c89b8;
+  --color-text-disabled: #77b8d4;
+  --color-disabled: #d2e7f1;
+  --color-tertiary: #1c89b8;
+  --global-border-radius: 6px;
+  --global-transition: all 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-base2);
+  color: var(--color-body);
+  font-family: var(--font-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4 ease;
+}
+
+a:hover {
+  color: var(--color-brand);
+}
+
+img {
+  width: 100%;
+  height: 36vh;
+}
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.bg-base {
+  background-color: var(--color-base);
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect {
+  transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--color-brand);
+  /* background-color: var(--color-brand2); */
+}
+
+/* ICONS */
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+/* Acorddion */
+.accordion {
+  background-color: var(--color-base);
+}
+
+.accordion-item {
+  background-color: var(--color-base2);
+}
+
+.accordion-header {
+  background-color: var(--color-brand);
+}
+
+.accordion-button {
+  background-color: var(--color-brand);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-brand2);
+  /* Replace with your desired color code */
+  color: var(--color-base);
+  /* Set the text color for better visibility, if needed */
+}
+
+
+/* Clock */
+.clock {
+  color: var(--color-brand);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5vw;
+  /* Setăm dimensiunea fontului în funcție de lățimea ecranului */
+
+  margin: 0 auto;
+  /* Centrează orizontal */
+  padding: 15px 0;
+  /* Adăugăm puțin spațiu pentru a fi mai vizual */
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-brand);
+}
+
+.navbar-brand img {
+  border: 6px solid var(--color-brand);
+}
+
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)),
+      url(../Images/sidebar_Img.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Change Text */
+.changeText h1 {
+  display: flex;
+  vertical-align: top;
+}
+
+.changeText h1 .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+
+.changeText h1 .word .letter {
+  transform-origin: center center 20px;
+  position: relative;
+}
+
+.changeText h1 .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32 cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.changeText h1 .word .letter.in {
+  transition: 0.38s ease;
+}
+
+.changeText h1 .word .letter.behind {
+  transform: rotateX(-90deg);
+}
+
+/* btn */
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
+}
+
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+}
+
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+
+/* Card */
+.card-custom .card-custom-image {
+  overflow: auto;
+}
+
+.card-custom .card-custom-image img {
+  transition: all 0.5s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.1);
+}
+
+/* Contact */
+#contact .form-control {
+  background-color: var(--color-base);
+  border-color: var(--color-base);
+  color: var(--color-body);
+}
+
+#contact .form-control:focus {
+  border-color: var(--color-brand);
+  box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+  color: var(--color-body);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+
+/* Social icons */
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100px;
+  font-size: 24px;
+}
+
+/* back to top */
+#progress-backToTop {
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  background-color: var(--color-base);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: var(--color-brand);
+}
+
+/* Responsive */
+@media screen and (max-width: 425px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+
+    color: var(--color-heading);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    /* Aici centram elementele în coloană */
+  }
+}
+
+@media (min-width: 576px) {
+  img {
+    height: 24vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  img {
+    height: 30vh;
+  }
+
+  .todos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .todos {
+    display: flex;
+    flex-direction: row;
+    justify-content: between;
+  }
+}
+
+@media (min-width: 991px) {
+  .hidden {
+    display: inline-block !important;
+  }
+
+  /* Content Wrapper */
+  #content-wrapper {
+    padding-left: var(--sidebar-width);
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* #stopwatch {
+    font-size: 4vh;
+  } */
+}
+
+
+/* To Do List */
+
+/* General Styles */
+
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+ol,
+ul {
+  /* list-style: none; */
+}
+
+/* Forms */
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#todo-form input {
+  background-color: var(--color-heading);
+  border: 0;
+  padding: 1rem;
+  border-radius: var(--global-border-radius);
+  outline: 0;
+}
+
+#todo-form input:hover,
+#todo-form input:focus {
+  background-color: var(--color-input-lighter);
+}
+
+#todo-form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+#todo-form button:hover {
+  background-color: var(--color-brand2);
+}
+
+#todo-form button:active {
+  background-color: var(--color-secondary-lighter);
+}
+
+#todo-form button,
+#todo-form input {
+  transition: var(--global-transition);
+}
+
+/* Stats */
+.stats {
+  /* display: flex; */
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.stats li {
+  display: flex;
+}
+
+.stats span {
+  padding: .25rem .5rem;
+}
+
+.stats span:first-child {
+  background-color: var(--color-heading);
+  color: var(--color-base2);
+  border-radius: var(--global-border-radius) 0 0 var(--global-border-radius);
+}
+
+.stats span:nth-child(2) {
+  background-color: var(--color-base);
+  color: var(--color-body);
+  font-weight: 700;
+}
+
+/* To Do List */
+.todos {
+  margin-bottom: 4rem;
+}
+
+.todos li {
+  background-color: white;
+  border-radius: var(--global-border-radius);
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos li div {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.todos li.complete {
+  background-color: var(--color-disabled);
+  text-decoration: line-through;
+  color: var(--color-text-disabled);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--color-base2);
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+  transition: var(--global-transition);
+}
+
+input[type="checkbox"]::before {
+  content: url("data:image/svg+xml,%3Csvg%20 width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 1L4.5 9L1.5 5.5' stroke='%23D2E7F1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  transform: scale(0);
+  transition: var(--global-transition);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--color-text-disabled);
+  border-color: var(--color-text-disabled);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.todos li button {
+  border: 0;
+  padding: .25rem;
+  display: grid;
+  place-content: center;
+  background-color: transparent;
+}
+
+.todos li button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.todos li button svg path {
+  transition: var(--global-transition);
+}
+
+.todos li button:hover svg path {
+  stroke: var(--color-text);
+}
+
+.todos li button:active svg {
+  transform: scale(.8);
+}
+
+.todos li span {
+  padding: 2px;
+  border-radius: var(--global-border-radius);
+  transition: var(--global-transition);
+}
+
+.todos li span:focus {
+  background-color: var(--color-body);
+  outline: none;
+}
+
+.todos li span[contenteditable]:hover {
+  background-color: var(--color-body);
+}
+
+/* carousel */
+.carousel-image {
+  max-width: 300px;
+  /* Specificați lățimea maximă a imaginilor */
+  max-height: 200px;
+  /* Specificați înălțimea maximă a imaginilor */
+  margin: 0 auto;
+  /* Centrarea orizontală a imaginilor */
+  width: auto;
+  border: 6px solid var(--color-brand);
+}

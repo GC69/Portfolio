@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Description of site" />
+    <meta name="description" content="Portfolio" />
 
     <meta name="keywords" content="Keywords separated by comma" />
 
@@ -22,7 +22,7 @@
 
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 
-    <meta http-equiv="refresh" content="660" />
+    <!-- <meta http-equiv="refresh" content="660" /> -->
 
     <meta http-equiv="Expires" content="0" />
 
@@ -30,24 +30,30 @@
 
     <meta name="author" content="Grigore Crigan" />
 
-    <link rel="stylesheet" href="/Profile/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/Profile/assets/css/aos.css" />
-    <link rel="stylesheet" href="/Profile/assets/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="/Profile/assets/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" href="/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#navbar-example"></body>
   <!-- Navbar start -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container flex-lg-column">
-      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+
+      <!-- Clock -->
+      <!-- <div id="MyClockDisplay" class="clock" onload="showTime()"></div> -->
+
+      <a class="navbar-brand mx-lg-auto mb-lg-3" href="#">
         <span class="h3 fw-bold d-block d-lg-none">Grigore Crigan</span>
-        <img src="./Profile/assets/Images/IMG-me.png" class="d-none d-lg-block rounded-5 >" alt="my foto" />
+        <img src="./Images/IMG-me.png" class="d-none d-lg-block rounded-5" alt="my foto" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
           <li class="nav-item">
@@ -81,26 +87,24 @@
   <div id="content-wrapper">
 
     <!-- Home -->
-    <section id="home" class="full-height px-lg-5">
+    <section id="home" class="full-height px-lg-4">
       <div class="container">
         <div class="row">
-          <div class="col-lg-10">
-            <div class="changeText">
-              <h1 class="display-4 fw-bold" data-aos="fade-down-right" </h1>
-                I'm a 
-              </h1>
-              <h1 class="display-4 fw-bold" data-aos="fade-down-right">
-                <span class="word text-brand">Front-End&nbsp;Developer</span>
-                <span class="word text-brand">Web&nbsp;Designer</span>
+          <div class="col-sm-12 col-md-12 col-lg-10 py-4">
+            <div class="changeText mb-4">
+              <h1 class="display-4 h1 fw-bold" data-aos="fade-down-right">I am</h1>
+              <h1 class="display-4" data-aos="fade-down-right">
+                <span class="word text-brand h1 fw-bold">Front-End&nbsp;Developer&nbsp;</span>
+                <span class="word text-brand h1 fw-bold">Web&nbsp;Designer</span>
               </h1>
             </div>
-            
-            <p class="lead mt-2 mb-4" data-aos="fade-down-right" data-aos-delay="300">
-              I am Grigore Crigan, and craft high-performing and delightful experiences
+
+            <p class="lead mt-5 mb-3" data-aos="fade-down-right" data-aos-delay="300">
+              My name is Grigore Crigan, and craft high-performing and delightful experiences
             </p>
             <div data-aos="fade-down-right" data-aos-delay="600">
               <a href="#work" class="btn btn-brand me-3">Explore My work</a>
-              <a href="#" class="link-custom">Call: (+373) 69696969</a>
+              <a href="#" class="link-custom">Call: (+373) 67116909</a>
             </div>
           </div>
         </div>
@@ -109,18 +113,18 @@
     <!-- Home end -->
 
     <!-- Services -->
-    <section id="services" class="full-height px-lg-5">
+    <section id="services" class="full-height px-lg-4">
       <div class="container">
 
         <div class="row pb-4" data-aos="fade-down-right">
-          <div class="col-lg-8">
+          <div class="col-lg-10">
             <h6 class="text-brand">Services</h6>
             <h1>Services That I Provide</h1>
           </div>
         </div>
 
         <div class="row gy-4">
-          <div class="col-md-4" data-aos="fade-down-right">
+          <div class="col-sm-12 col-md-4" data-aos="fade-down-right">
             <div class="service p-4 bg-base rounded-3 shadow-effect">
               <div class="iconbox rounded-4">
                 <i class="las la-feather"></i>
@@ -135,7 +139,7 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-down-right" data-aos-delay="300">
+          <div class="col-sm-12 col-md-4" data-aos="fade-down-right" data-aos-delay="300">
             <div class="service p-4 bg-base rounded-3 shadow-effect">
               <div class="iconbox rounded-4">
                 <i class="las la-pencil-ruler"></i>
@@ -150,7 +154,7 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-down-right" data-aos-delay="600">
+          <div class="col-sm-12 col-md-4" data-aos="fade-down-right" data-aos-delay="600">
             <div class="service p-4 bg-base rounded-3 shadow-effect">
               <div class="iconbox rounded-4">
                 <i class="las la-laptop-code"></i>
@@ -170,70 +174,105 @@
     <!-- Services end -->
 
     <!-- Work -->
-    <section id="work" class="full-height px-lg-5">
+    <section id="work" class="full-height px-lg-4 m-3">
       <div class="container">
 
-        <div class="row pb-4" data-aos="fade-down-right">
+        <div class="row" data-aos="fade-down-right">
           <div class="col-lg-8">
             <h6 class="text-brand">Work</h6>
             <h1>My Recent Projects</h1>
           </div>
         </div>
 
-        <div class="row gy-4">
+        <div class="row">
 
-          <div class="col-md-6" data-aos="fade-down-right">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/project1.jpg" alt="">
+          <div class="accordion p-4 bg-base rounded-4 shadow-effect" id="accordionPanelsStayOpenExample"
+            data-aos="fade-down-right">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Clock Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body d-flex justify-content-center align-items-center">
+                  <!-- Clock -->
+                  <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+                </div>
               </div>
-              <div class="card-custom-content p-4">
-                <h4>Startup Landing Page</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="link-custom">Read More</a>
+            </div>            
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Stop Watch Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body d-flex flex-column align-items-center">
+            
+                  <!-- Stop watch -->
+                  <div id="stopwatch" class="clock d-flex align-items-center justify-content-center mx-auto text-center">00:00:00:00</div>
+            
+                  <div class="col-sm-12 text-center mt-3">
+                    <button onclick="start()" class="btn btn-brand my-2">Start</button>
+                    <button onclick="stop()" class="btn btn-brand my-2">Stop</button>
+                    <button onclick="reset()" class="btn btn-brand my-2">Reset</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  To Do List Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+          
+                  <header id="main-header" class="container">
+                    <h1>Today</h1>
+          
+                    <form action="" id="todo-form" class="d-flex flex-wrap gap-1">
+                      <input type="text" name="task-name" placeholder="e.g. Buy groceries" autofocus class="form-control flex-grow-1 mb-2">
+                      <button type="submit" class="btn btn-brand">Add task</button>
+                    </form>
+                  </header>
+          
+                  <section>
+                    <div class="container" id="main-content">
+                      <ul class="stats list-unstyled mt-3 gap-4 d-flex justify-content-center">
+                        <li>
+                          <span>Remaining</span>
+                          <span id="remaining-tasks">0</span>
+                        </li>
+                        <li>
+                          <span>Completed</span>
+                          <span id="completed-tasks">0</span>
+                        </li>
+                        <li>
+                          <span>Total</span>
+                          <span id="total-tasks">0</span>
+                        </li>
+                      </ul>
+          
+                      <ul class="todos list-unstyled mt-3 flex-column gap-1"></ul>
+                    </div>
+                  </section>
+          
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-md-6" data-aos="fade-down-right" data-aos-delay="300">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/project2.jpg" alt="">
-              </div>
-              <div class="card-custom-content p-4">
-                <h4>Startup Landing Page</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="link-custom">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" data-aos="fade-down-right">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/project3.jpg" alt="">
-              </div>
-              <div class="card-custom-content p-4">
-                <h4>Startup Landing Page</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="link-custom">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" data-aos="fade-down-right" data-aos-delay="300">
-            <div class="card-custom rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/project4.jpg" alt="">
-              </div>
-              <div class="card-custom-content p-4">
-                <h4>Startup Landing Page</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="link-custom">Read More</a>
-              </div>
-            </div>
-          </div>
-
 
         </div>
       </div>
@@ -241,7 +280,7 @@
     <!-- Work end -->
 
     <!-- About -->
-    <section id="about" class="full-height px-lg-5">
+    <section id="about" class="full-height px-lg-4">
       <div class="container">
 
         <div class="row pb-4" data-aos="fade-down-right">
@@ -258,7 +297,7 @@
             <div class="row gy-4">
 
               <div class="col-12" data-aos="fade-down-right" data-aos-delay="600">
-                <div class=" bg-base p-4 rounded-4 shadow-effect">
+                <div class="bg-base p-4 rounded-4 shadow-effect">
                   <h4>Facultatea inginerie si management in mecanica</h4>
                   <p class="text-brand mb-2"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
@@ -268,7 +307,16 @@
 
               <div class="col-12" data-aos="fade-down-right" data-aos-delay="600">
                 <div class=" bg-base p-4 rounded-4 shadow-effect">
-                  <h4>Facultatea inginerie si management in mecanica</h4>
+                  <h4>Start rapid în web design</h4>
+                  <p class="text-brand mb-2"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="mb-0"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+
+              <div class="col-12" data-aos="fade-down-right" data-aos-delay="600">
+                <div class=" bg-base p-4 rounded-4 shadow-effect">
+                  <h4>Front-End Development</h4>
                   <p class="text-brand mb-2"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                   <p class="mb-0"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -284,7 +332,7 @@
 
               <div class="col-12" data-aos="fade-down-right" data-aos-delay="600">
                 <div class=" bg-base p-4 rounded-4 shadow-effect">
-                  <h4>Facultatea inginerie si management in mecanica</h4>
+                  <h4>Inginer Internet</h4>
                   <p class="text-brand mb-2"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                   <p class="mb-0"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -293,7 +341,7 @@
 
               <div class="col-12" data-aos="fade-down-right" data-aos-delay="600">
                 <div class=" bg-base p-4 rounded-4 shadow-effect">
-                  <h4>Facultatea inginerie si management in mecanica</h4>
+                  <h4>Auto-didact</h4>
                   <p class="text-brand mb-2"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                   <p class="mb-0"> All we are more lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -308,72 +356,94 @@
     <!-- About end -->
 
     <!-- Reviews -->
-    <section id="reviews" class="full-height px-lg-5">
+    <section id="reviews" class="full-height px-lg-4">
       <div class="container">
-        <div class="row pb-4" data-aos="fade-down-right">
-          <div class="col-lg-8">
-            <h6 class="text-brand">Reviews</h6>
-            <h1>What our subscribers say</h1>
+        <div id="carouselExampleIndicators" class="carousel slide  d-flex justify-content-center align-items-center m-1">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
-        <div class="row gy-4">
-          <div class="col-md-4" data-aos="fade-down-right">
-            <div class="review shadow-effect bg-base p-4 rounded-4">
-              <div class=" text-brand h5">
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
+  
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div data-aos="fade-down-right">
+                <div class="review shadow-effect bg-base p-4 rounded-4">
+                  <img src="./Images/images.jpg" class="d-block rounded-5 mb-3 carousel-image" alt="Girl Image">
+  
+                  <div class=" text-brand h5 d-flex justify-content-center">
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                  </div>
+                  <p class="m-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores doloremque dolor
+                    corporis, tempore magni animi quo facilis modi voluptatibus?</p>
+                  <div class="person m-4">
+                    <h5 class="mb-0">Gabriela Radu</h5>
+                    <p class="mb-0">LinkedIn</pclas>
+                  </div>
+                </div>
               </div>
-              <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores doloremque dolor
-                corporis, tempore magni animi quo facilis modi voluptatibus?</p>
-              <div class="person">
-                <h5 class="mb-0">Jon Doe</h5>
-                <p class="mb-0">Twitter</pclas>
+            </div>
+            <div class="carousel-item">
+              <div data-aos="fade-down-right" data-aos-delay="300">
+                <div class="review bg-base p-4 rounded-4 shadow-effect">
+                  <img src="./Images/images (3).jpg" class="d-block rounded-5 mb-3 carousel-image" alt="Boy Image">
+  
+                  <div class=" text-brand h5 d-flex justify-content-center">
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                  </div>
+                  <p class="m-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores doloremque dolor
+                    corporis, tempore magni animi quo facilis modi voluptatibus?</p>
+                  <div class="person m-4">
+                    <h5 class="mb-0">Radu Popa</h5>
+                    <p class="mb-0">Facebook</pclas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div data-aos="fade-down-right" data-aos-delay="600">
+                <div class="review shadow-effect bg-base p-4 rounded-4">
+                  <img src="./Images/images (2).jpg" class="d-block rounded-5 mb-3 carousel-image" alt="Girl Image">
+  
+                  <div class=" text-brand h5 d-flex justify-content-center">
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                    <i class="las la-star"></i>
+                  </div>
+                  <p class="m-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores doloremque dolor
+                    corporis, tempore magni animi quo facilis modi voluptatibus?</p>
+                  <div class="person m-4">
+                    <h5 class="mb-0">Alexandra Mihai</h5>
+                    <p class="mb-0">Instagram</pclas>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-down-right" data-aos-delay="300">
-            <div class="review shadow-effect bg-base p-4 rounded-4">
-              <div class=" text-brand h5">
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-              </div>
-              <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores doloremque dolor
-                corporis, tempore magni animi quo facilis modi voluptatibus?</p>
-              <div class="person">
-                <h5 class="mb-0">Jon Doe</h5>
-                <p class="mb-0">Twitter</pclas>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-down-right" data-aos-delay="600">
-            <div class="review shadow-effect bg-base p-4 rounded-4">
-              <div class=" text-brand h5">
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-                <i class="las la-star"></i>
-              </div>
-              <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores doloremque dolor
-                corporis, tempore magni animi quo facilis modi voluptatibus?</p>
-              <div class="person">
-                <h5 class="mb-0">Jon Doe</h5>
-                <p class="mb-0">Twitter</pclas>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
     <!-- Reviews end -->
 
     <!-- Blog -->
-    <section id="blog" class="full-height px-lg-5">
+    <section id="blog" class="full-height px-lg-4">
       <div class="container">
 
         <div class="row pb-4" data-aos="fade-down-right">
@@ -388,7 +458,7 @@
           <div class="col-md-6" data-aos="fade-down-right">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/Blog1.jpg" alt="">
+                <img class="rounded-4" src="./Images/Blog1.jpg" alt="">
               </div>
               <div class="card-custom-content p-4">
                 <p class="text-brand mb-2">01 Mar, 2022</p>
@@ -401,7 +471,7 @@
           <div class="col-md-6" data-aos="fade-down-right" data-aos-delay="300">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/Blog2.jpg" alt="">
+                <img class="rounded-4" src="./Images/Blog2.jpg" alt="">
               </div>
               <div class="card-custom-content p-4">
                 <p class="text-brand mb-2">16 Aug, 2022</p>
@@ -414,7 +484,7 @@
           <div class="col-md-6" data-aos="fade-down-right">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/Blog3.jpg" alt="">
+                <img class="rounded-4" src="./Images/Blog3.jpg" alt="">
               </div>
               <div class="card-custom-content p-4">
                 <p class="text-brand mb-2">16 Sep, 2022</p>
@@ -427,7 +497,7 @@
           <div class="col-md-6" data-aos="fade-down-right" data-aos-delay="300">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-image rounded-4">
-                <img class="rounded-4" src="./Profile/assets/Images/Blog4.jpg" alt="">
+                <img class="rounded-4" src="./Images/Blog4.jpg" alt="">
               </div>
               <div class="card-custom-content p-4">
                 <p class="text-brand mb-2">04 Dec, 2022</p>
@@ -444,7 +514,7 @@
     <!-- Blog end -->
 
     <!-- Contact -->
-    <section id="contact" class="full-height px-lg-5">
+    <section id="contact" class="full-height px-lg-4">
       <div class="container">
 
         <div class="row justify-content-center text-center" data-aos="fade-down-right">
@@ -456,19 +526,19 @@
           <div class="col-lg-8">
             <form action="#" class="row g-lg-3 gy-3">
               <div class="form-grup col-md-6">
-                <input type="text" class="form-control" placeholder="Enter your name">
+                <input type="text" class="form-control" placeholder="Enter your name" pattern="[A-Za-z]+" minlength="3" required>
               </div>
 
               <div class="form-grup col-md-6">
-                <input type="email" class="form-control" placeholder="Enter your E-mail">
+                <input type="email" id="emailInput" class="form-control" placeholder="Enter your E-mail" required>
               </div>
 
               <div class="form-grup col-12">
-                <input type="text" class="form-control" placeholder="Enter subject">
+                <input type="text" class="form-control" placeholder="Enter subject" minlength="3" required>
               </div>
 
               <div class="form-grup col-12">
-                <textarea name="" rows="4" class="form-control" placeholder="Enter Your mesage"></textarea>
+                <textarea name="" rows="4" class="form-control" placeholder="Enter Your mesage" minlength="3" required  ></textarea>
               </div>
 
               <div class="form-grup col-12 d-grid">
@@ -488,17 +558,16 @@
       <div class="container">
         <div class="row gy-4 justify-content-between">
           <div class="col-auto">
-            <p class="mb-0">Copyright text goes here</p>
+            <p class="mb-0">&copy; Copyright text goes here</p>
           </div>
           <div class="col-auto">
             <div class="social-icons">
               <a href="#"><i class="lab la-github"></i></a>
-              <a href="#"><i class="lab la-linkedin-in"></i></a>              
+              <a href="#"><i class="lab la-git"></i></a>
+              <a href="#"><i class="lab la-linkedin-in"></i></a>
               <a href="#"><i class="lab la-instagram"></i></a>
               <a href="#"><i class="lab la-facebook-f"></i></a>
-              <a href="#"><i class="lab la-pinterest"></i></a>
-              <a href="#"><i class="lab la-twitter"></i></a>
-              <a href="#"><i class="lab la-odnoklassniki"></i></a>
+              <a href="#"><i class="lab la-pinterest"></i></a>              
             </div>
           </div>
         </div>
@@ -514,9 +583,9 @@
     <span id="progress-value">&#x1F815;</span>
   </div>
 
-  <script src="/Profile/assets/js/bootstrap.bundle.min.js"></script>
-  <script src="/Profile/assets/js/aos.js"></script>
-  <script src="/Profile/assets/js/script.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/aos.js"></script>
+  <script src="/js/script.js"></script>
   </body>
 
 </html>

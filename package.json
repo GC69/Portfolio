@@ -1,28 +1,14 @@
 {
-  "name": "test-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Learning bootstrap v5 with sass",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss:assets/css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Boostrap",
-    "bootstap-v5",
-    "sass",
-    "learn-bootstrap",
-    "learn-sass"
-  ],
-  "author": "Grigore Crigan",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "postcss": "^8.4.24",
-    "postcss-cli": "^10.1.0",
-    "sass": "^1.63.6"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.4.14",
-    "bootstrap": "^5.3.0",
-    "google-fonts": "^1.0.0"
+    "eslint": "^8.47.0"
   }
 }
