@@ -131,14 +131,19 @@ img {
 /* Clock */
 .clock {
   color: var(--color-brand);
-  font-family: 'Orbitron', sans-serif;
-  font-size: 5vw;
+  font-family: 'Courier New', monospace, sans-serif;
+  font-weight: bolder;
+  font-size: 5vh;
   /* Setăm dimensiunea fontului în funcție de lățimea ecranului */
 
   margin: 0 auto;
   /* Centrează orizontal */
   padding: 15px 0;
   /* Adăugăm puțin spațiu pentru a fi mai vizual */
+}
+
+.clock span {
+  font-size: 5vh;
 }
 
 
