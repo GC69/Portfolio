@@ -47,7 +47,7 @@ function showTime() {
 showTime();
 
 
-// Stopwach
+// Stopwatch
 let startTime = null;
 let elapsedTime = 0;
 let timerInterval;

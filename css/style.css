@@ -395,10 +395,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-ol,
-ul {
-  /* list-style: none; */
-}
 
 /* Forms */
 #todo-form {
