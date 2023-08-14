@@ -51,10 +51,11 @@ showTime();
 let startTime = null;
 let elapsedTime = 0;
 let timerInterval;
+let recordedTimes = [];
 
 function start() {
   if (startTime === null) {
-    startTime = new Date();
+    startTime = new Date() - elapsedTime;
     timerInterval = setInterval(updateTime, 10);
   }
 }
@@ -69,6 +70,11 @@ function reset() {
   startTime = null;
   elapsedTime = 0;
   displayTime(0);
+
+  // Clear recorded times list
+  recordedTimes = [];
+  const recordedTimesList = document.getElementById('recordedTimes');
+  recordedTimesList.innerHTML = '';
 }
 
 function updateTime() {
@@ -78,18 +84,38 @@ function updateTime() {
 }
 
 function displayTime(time) {
+  const formattedTime = formatTime(time);
+  document.getElementById('stopwatch').textContent = formattedTime;
+}
+
+function formatTime(time) {
   const milliseconds = Math.floor((time % 1000) / 10);
   const seconds = Math.floor((time / 1000) % 60);
   const minutes = Math.floor((time / 1000 / 60) % 60);
   const hours = Math.floor((time / 1000 / 60 / 60) % 24);
 
-  const formattedTime = `${hours.toString().padStart(2, '0')}:
+  return `${hours.toString().padStart(2, '0')}:
     ${minutes.toString().padStart(2, '0')}:
     ${seconds.toString().padStart(2, '0')}:
     ${milliseconds.toString().padStart(2, '0')}`;
-
-  document.getElementById('stopwatch').textContent = formattedTime;
 }
+
+function recordTime() {
+  recordedTimes.push(elapsedTime);
+  const recordedTimesList = document.getElementById('recordedTimes');
+  const listItem = document.createElement('li');
+  const formattedRecordedTime = formatTime(elapsedTime);
+
+  listItem.textContent = formattedRecordedTime;
+  recordedTimesList.appendChild(listItem);
+}
+
+function next() {
+  if (startTime !== null) {
+    recordTime();
+  }
+}
+
 
 // Back to the top
 let calcScrollValue = () => {

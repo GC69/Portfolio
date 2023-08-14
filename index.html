@@ -217,13 +217,15 @@
                 <div class="accordion-body d-flex flex-column align-items-center">
             
                   <!-- Stop watch -->
-                  <div id="stopwatch" class="clock d-flex align-items-center justify-content-center mx-auto text-center">00:00:00:00</div>
-            
                   <div class="col-sm-12 text-center mt-3">
                     <button onclick="start()" class="btn btn-brand my-2">Start</button>
+                    <button onclick="next()" class="btn btn-brand my-2">Next</button>
                     <button onclick="stop()" class="btn btn-brand my-2">Stop</button>
                     <button onclick="reset()" class="btn btn-brand my-2">Reset</button>
                   </div>
+
+                  <div id="stopwatch" class="clock d-flex align-items-center justify-content-center mx-auto text-center">00:00:00:00</div>
+                  <ol id="recordedTimes" class="clock"></ol>                 
                 </div>
               </div>
             </div>
