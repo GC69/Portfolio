@@ -133,7 +133,7 @@ img {
   color: var(--color-brand);
   font-family: 'Courier New', monospace, sans-serif;
   font-weight: bolder;
-  font-size: 5vh;
+  font-size: 6vh;
   /* Setăm dimensiunea fontului în funcție de lățimea ecranului */
 
   margin: 0 auto;
